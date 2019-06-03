@@ -150,7 +150,7 @@ class Members extends CI_Controller {
 	 */
 	public function membersList() {
 		$page = $this->uri->segment(2)?:1;
-		$limit = $this->input->get('limit')?:2;
+		$limit = $this->input->get('limit')?:10;
 		$offset = ($page-1)*$limit;
 
 		$data = $this->members_model->get_members_list($limit, $offset);
