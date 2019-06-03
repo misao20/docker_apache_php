@@ -1,3 +1,5 @@
 *.iml
 .idea/*
 mysql_data/*
+docker-compose.yml
+.DS_Store
